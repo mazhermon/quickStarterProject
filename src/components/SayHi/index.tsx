@@ -7,7 +7,7 @@ export const SayHi: React.FC = () => {
   return (
     <div className={styles.sayHi}>
       <h1 className={styles.sayHi__heading}>Maz Hermon tech test starter</h1>
-      <p>hello 😄</p>
+      <p>hello Canva 😄</p>
 
       <CurrentTime />
     </div>
