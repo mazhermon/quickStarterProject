@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { Hello } from 'components/hello';
+import { SayHi } from 'components/SayHi';
 import styles from './app.module.css';
 
 const App: React.FC = () => {
   return (
     <main className={styles.main}>
       <header className={styles.header}>
-        <Hello />
+        <SayHi />
       </header>
       <section className={styles.copy}></section>
     </main>
