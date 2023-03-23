@@ -1,24 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React from "react";
+import { CurrentTime } from "./CurrentTime";
 
-import styles from './hello.module.css'
+import styles from "./hello.module.css";
 
 export const Hello: React.FC = () => {
-  const [pageLoadedAtTime, setPageLoadedAtTime] = useState<string | null>(null)
-  useEffect(() => {
-    const date = new Date()
-    const formattedTime = date.toLocaleString('en-US', {
-      hour: 'numeric',
-      minute: 'numeric',
-      hour12: true,
-    })
-    setPageLoadedAtTime(formattedTime)
-  }, [])
-
   return (
-    <>
-      <h1 className={styles.hello_heading}>Maz Hermon</h1>
+    <div className={styles.hello}>
+      <h1 className={styles.hello__heading}>Maz Hermon tech test starter</h1>
       <p>hello 😄</p>
-      <p>This page was loaded at {pageLoadedAtTime}</p>
-    </>
-  )
-}
+      <CurrentTime />
+    </div>
+  );
+};
