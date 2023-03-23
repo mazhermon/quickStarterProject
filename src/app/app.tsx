@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-import { Hello } from 'components/hello'
-import styles from './app.module.css'
+import { Hello } from 'components/hello';
+import styles from './app.module.css';
 
 const App: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const App: React.FC = () => {
       </header>
       <section className={styles.copy}></section>
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;

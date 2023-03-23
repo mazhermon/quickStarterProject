@@ -33,7 +33,11 @@
     "start": "vite",
     "build": "vite build",
     "test": "jest",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "lint": "eslint \"./src/**/*.ts?(x)\"",
+    "lintfix": "eslint \"./src/**/*.ts?(x)\" --fix",
+    "prettier": "prettier --ignore-path .gitIgnore \"**/*.+(js|ts|tsx|json|scss)\"",
+    "format": "yarn prettier -- --write"
   },
   "dependencies": {
     "@heroicons/react": "2.0.13",

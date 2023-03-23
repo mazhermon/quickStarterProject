@@ -1,4 +1,4 @@
-# Maz Hermon meets Atlassian
+# Maz Hermon quick starter project
 
 ## Features
 
