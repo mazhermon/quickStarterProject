@@ -1,11 +1,11 @@
 import { render, screen } from '@testing-library/react';
-import { Hello } from './hello';
+import { SayHi } from '.';
 
 import { axe } from 'jest-axe';
 
 describe('Hello', () => {
   it('should render the Hello component', () => {
-    render(<Hello />);
+    render(<SayHi />);
     expect(
       screen.getByRole('heading', {
         level: 1,
@@ -15,7 +15,7 @@ describe('Hello', () => {
   });
 
   it('should have no obvious a11y fails', async () => {
-    const { container } = render(<Hello />);
+    const { container } = render(<SayHi />);
     const axeResult = await axe(container);
     expect(axeResult).toHaveNoViolations();
   });
