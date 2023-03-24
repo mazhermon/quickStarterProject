@@ -1,0 +1,20 @@
+.hype {
+  grid-area: hype;
+  padding: 2rem;
+  background-color: var(--white);
+  color: var(--purple-dark);
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  background-image: var(--gradient-one);
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .hype {
+    font-size: 4rem;
+    background-color: var(--white);
+    background-image: var(--gradient-one);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}

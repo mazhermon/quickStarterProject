@@ -9,9 +9,11 @@ describe('Hello', () => {
     expect(
       screen.getByRole('heading', {
         level: 1,
-        name: 'Maz Hermon tech test starter',
+        name: 'Maz Hermon',
       }),
     ).toBeInTheDocument();
+    expect(screen.getByText(/tech test/i)).toBeInTheDocument();
+    expect(screen.getByText(/This page was loaded at/i)).toBeInTheDocument();
   });
 
   it('should have no obvious a11y fails', async () => {

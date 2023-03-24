@@ -1,6 +1,63 @@
 .sayHi {
-  padding: 4rem;
+  --displayHeadingSize: 3rem;
+}
+@media screen and (min-width: 50rem) {
+  .sayHi {
+    --displayHeadingSize: 4.5rem;
+  }
+}
+
+.sayHi {
+  background-image: var(--gradient-one);
+  min-width: 100vw;
+  min-height: 100vh;
+  color: var(--white);
+
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 12% 1fr;
+  grid-template-areas:
+    '. .'
+    '. content';
+}
+@media screen and (min-width: 50rem) {
+  .sayHi {
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 20% 1fr;
+  }
 }
 
 .sayHi__heading {
+  font-size: var(--displayHeadingSize);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.sayHi__heading {
+  font-size: var(--displayHeadingSize);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.sayHi__subTitle {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.sayHi__content {
+  width: 100%;
+  background-color: var(--black);
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: 1fr 200px;
+  grid-template-areas:
+    'info .'
+    '. hype';
+}
+
+.sayHi__authorInfo {
+  padding: 4rem;
 }

@@ -1,3 +1,14 @@
+:root {
+  --white: #ffffff;
+  --black: rgba(13, 18, 22, 0.7);
+  --black-2: rgba(13, 18, 22, 0.7);
+  --purple: #9e77f3;
+  --aqua: #00c4cc;
+  --purple-dark: #7d2ae8;
+
+  --gradient-one: linear-gradient(90deg, var(--aqua), var(--purple-dark));
+}
+
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -15,10 +26,40 @@ body {
   line-height: 1;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  min-height: 100vh;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: bold;
+  margin-top: 5rem;
+  font-size: 2.2rem;
+}
+@media screen and (min-width: 50rem) {
+  h1 {
+    font-size: 5.5rem;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
 }
